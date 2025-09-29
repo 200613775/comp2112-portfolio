@@ -9,7 +9,7 @@ export default function Home() {
           Welcome to My Portfolio
         </h1>
         <p className="text-lg md:text-xl mb-6">
-          Hi, I’m Nishi Patel and I am passionate developer eager to create meaningful digital experiences.
+          Hi, I am Nishi Patel and I am passionate developer eager to create meaningful digital experiences.
         </p>
         <p className="italic text-gray-600 mb-10">
           “My mission is to design and build user-friendly applications that combine creativity, technology, and functionality.”
