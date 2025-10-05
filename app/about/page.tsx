@@ -7,7 +7,7 @@ export default function About() {
     <section className="max-w-3xl mx-auto">
       <div className="flex flex-col md:flex-row items-start gap-6">
         <div className="w-40 h40 relative rounded-lg overflow-hidden">
-            <Image src="/Mypicture.jpeg" alt="Nishi's photo"  width={800} height={200} className="rounded-full shadow-lg np-6"/>
+            <Image src="/myimg.jpeg" alt="Nishi's photo"  width={800} height={200} className="rounded-full shadow-lg np-6"/>
         </div>
 
         <div>
