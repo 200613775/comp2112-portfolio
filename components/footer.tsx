@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 text-gray-800 p-6 flex justify-between items-center">
+    <footer className="w-full bg-gray-400 text-black flex items-center justify-between p-4 mt-10">
       <p>&copy; {new Date().getFullYear()} MyPortfolio</p>
       
       <div className="flex space-x-6">

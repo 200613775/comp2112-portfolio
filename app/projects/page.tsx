@@ -9,6 +9,8 @@ export default function Projects() {
   return (
     <section className="max-w-4xl mx-auto">
       <h2 className="text-2xl font-bold mb-4">Projects</h2>
+      <p>Here is some projects Which shows my skiils in developin and designing.</p>
+      
       <div className="grid md:grid-cols-3 gap-6">
         {projects.map((p) => (
           <article key={p.title} className="bg-white rounded-md p-4 shadow-sm">
