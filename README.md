@@ -42,9 +42,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/b
 # My portfolio app
 In this webstite I have added pages like: Home, Contact, About, Skills, and Projects.
 
-My mission to create this app is to show my knowledge and understanding with this language.
+My mission to create this app is to show my knowledge and understanding with this languages: Next.js and Tailwind CSS.
 
 Through this portfolio app, I can show ability to work as Web Developer and Designer.
 
-Github Link:
-Live website:
+Github Link: https://github.com/200613775/comp2112-portfolio
+Live website: https://comp2112-portfolio.vercel.app/
