@@ -12,13 +12,13 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image src="/linkdin.png" alt="LinkedIn"  width={80} height={80} />
+          <Image src="/linkdin.png" alt="LinkedIn"  width={120} height={120} />
         </a>
 
         {/* GitHub icon and link that with my profile*/}
         <a href="https://github.com/200613775" target="_blank" rel="noopener noreferrer"
         >
-          <Image src="/github.png" alt="GitHub" width={60} height={60} />
+          <Image src="/github.png" alt="GitHub" width={40} height={40} />
         </a>
       </div>
     </footer>
