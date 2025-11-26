@@ -19,22 +19,49 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-center">My Skills</h1>
-      <p className="text-center text-gray-600 mb-10">
-        Developing and Designing Skills Which I know or I can work on so far.
-      </p>
+    <main className="min-h-screen relative flex flex-col items-center justify-start pt-28 pb-24 px-6 bg-gray-50 text-gray-900 overflow-hidden">
 
-      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-        {skills.map((skill) => (
-          <li key={skill.name} className="flex flex-col items-center bg-white shadow-sm rounded-xl p-4 hover:shadow-md transition">
-            <div className="w-14 h-14 relative mb-3">
-              <Image src={skill.icon} alt={skill.name} fill style={{ objectFit: "contain" }}/>
-            </div>
-            <p className="text-sm font-medium text-gray-700">{skill.name}</p>
-          </li>
-        ))}
-      </ul>
-    </section>
+      {/* Animated Background Glow */}
+      <div className="absolute w-[600px] h-[600px] bg-blue-600 opacity-20 blur-[200px] rounded-full -top-32 left-10 animate-pulse"></div>
+      <div className="absolute w-[400px] h-[400px] bg-purple-600 opacity-20 blur-[200px] rounded-full bottom-0 right-0 animate-pulse"></div>
+
+      {/* Overlay for text readability */}
+      <div className="absolute inset-0 bg-white/20 backdrop-blur-sm pointer-events-none"></div>
+
+      {/* Skills Content */}
+      <section className="relative z-10 max-w-5xl w-full text-center">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-2xl text-gray-900">
+          My Skills
+        </h1>
+        <p className="text-lg md:text-xl text-gray-700 mb-12 drop-shadow-sm">
+          Developing and designing skills which I know or can work on so far.
+        </p>
+
+        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          {skills.map((skill) => (
+            <li
+              key={skill.name}
+              className="flex flex-col items-center bg-white/70 backdrop-blur-md rounded-2xl p-5 hover:scale-105 transition-transform shadow-lg"
+            >
+              <div className="w-16 h-16 relative mb-3">
+                <Image
+                  src={skill.icon}
+                  alt={skill.name}
+                  fill
+                  style={{ objectFit: "contain" }}
+                  className="rounded-lg"
+                />
+              </div>
+              <p className="text-gray-900 font-semibold drop-shadow-md">{skill.name}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* Footer */}
+      <footer className="w-full text-center text-gray-700 text-sm mt-12">
+        © 2025 Nishi • Portfolio
+      </footer>
+    </main>
   );
 }
