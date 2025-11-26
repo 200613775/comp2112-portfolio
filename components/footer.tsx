@@ -2,24 +2,27 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gray-400/60 backdrop-blur-md text-white flex items-center justify-between p-4 rounded-t-xl shadow-md mt-10">
-      <p className="text-sm">
-        &copy; {new Date().getFullYear()} MyPortfolio
+    <footer className="w-full relative z-50 bg-white/40 backdrop-blur-md border-t border-white/20 shadow-lg flex flex-col md:flex-row items-center justify-between px-6 py-4 rounded-t-xl">
+
+      {/* Copyright */}
+      <p className="text-black text-sm md:text-base mb-3 md:mb-0 drop-shadow-md font-medium">
+        &copy; {new Date().getFullYear()} Nishi • Portfolio
       </p>
 
+      {/* Social Links */}
       <div className="flex space-x-6">
         {/* LinkedIn */}
         <a
           href="https://www.linkedin.com/in/nishi-patel-848101328/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:opacity-80 transition"
+          className="hover:scale-110 transition-transform"
         >
           <Image 
             src="/linkdin.png" 
             alt="LinkedIn"  
-            width={30} 
-            height={30} 
+            width={100} 
+            height={100} 
           />
         </a>
 
@@ -28,16 +31,16 @@ export default function Footer() {
           href="https://github.com/200613775" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="hover:opacity-80 transition"
+          className="hover:scale-110 transition-transform"
         >
           <Image 
             src="/github.png" 
             alt="GitHub" 
-            width={30} 
-            height={30} 
+            width={60} 
+            height={60} 
           />
         </a>
       </div>
     </footer>
-  );
+  )
 }
