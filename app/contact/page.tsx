@@ -55,7 +55,7 @@ export default function Contact() {
 
           {/* Email */}
           <a 
-            href="mailto:patelnishi369@gmail.com" 
+            href="mailto:200613775@student.georgianc.on.ca" 
             className="flex items-center gap-2 text-blue-600 hover:text-blue-800 text-lg font-medium"
           >
             <FaEnvelope /> Email Me
