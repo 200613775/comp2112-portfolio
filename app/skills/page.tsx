@@ -3,8 +3,6 @@ import Image from "next/image";
 const skills = [
   { name: "JavaScript", icon: "/JavaScript.png" },
   { name: "TypeScript", icon: "/Typescript.png" },
-  { name: "C", icon: "/C.png" },
-  { name: "C++", icon: "/C++.png" },
   { name: "C#", icon: "/CS.png" },
   { name: "HTML", icon: "/HTML.png" },
   { name: "CSS", icon: "/CSS.png" },
