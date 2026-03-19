@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const words = ["Web Developer", "Frontend Designer", "UI/UX Enthusiast", "Creative Coder"];
+  const words = ["Web Developer", "Frontend Designer", "UI/UX Designer", "Creative Coder"];
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [index, setIndex] = useState(0);
 
@@ -52,7 +52,7 @@ export default function Home() {
           >
             About Me
           </Link>
-          <Link
+          {/* <Link
             href="/projects"
             className="px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-700 transition shadow-lg text-white"
           >
@@ -63,7 +63,7 @@ export default function Home() {
             className="px-6 py-3 rounded-xl bg-gray-700 hover:bg-gray-600 transition shadow-lg text-white"
           >
             Contact
-          </Link>
+          </Link> */}
         </div>
       </section>
 
