@@ -1,26 +1,13 @@
 'use client';
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
-  const router = useRouter();
+  
+  const [] = useState<string>('');
+  const [] = useState<string>('');
 
-  const [name, setName] = useState<string>('');
-  const [number, setNumber] = useState<string>('');
-  const [message, setMessage] = useState<string>('');
-  const [confirmation, setConfirmation] = useState<string>('');
-
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
-
-    setConfirmation(`Your name: ${name} | Contact: ${number} | Message: ${message}`);
-
-    setTimeout(() => {
-      router.push("/about");
-    }, 5000);
-  };
 
   return (
     <main className="min-h-screen relative flex flex-col items-center justify-start pt-28 pb-24 px-6 bg-gray-50 text-gray-900 overflow-hidden">
@@ -39,7 +26,7 @@ export default function Contact() {
         </h1>
 
         <p className="mb-6 text-gray-700 text-lg">
-          Feel free to call or email me anytime!
+         I’m always open to new opportunities, collaborations, or just a friendly conversation. If you’d like to get in touch, feel free to call, or send an email. I’ll respond as soon as possible.
         </p>
 
         {/* 🔹 Call & Email Section */}
@@ -62,52 +49,6 @@ export default function Contact() {
           </a>
 
         </div>
-
-        {/* 🔹 Form */}
-        <form 
-          onSubmit={handleSubmit}
-          className="flex flex-col gap-4 w-full bg-white/70 backdrop-blur-md p-6 rounded-2xl shadow-lg"
-        >
-          <input 
-            type="text" 
-            placeholder="Full Name" 
-            value={name} 
-            onChange={(e) => setName(e.target.value)} 
-            className="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-            required
-          />
-
-          <input 
-            type="text" 
-            placeholder="Contact Number" 
-            value={number} 
-            onChange={(e) => setNumber(e.target.value)} 
-            className="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-            required
-          />
-
-          <textarea 
-            placeholder="Your Message" 
-            value={message} 
-            onChange={(e) => setMessage(e.target.value)} 
-            rows={4} 
-            className="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-            required
-          />
-
-          <button 
-            type="submit"
-            className="bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 transition shadow-lg"
-          >
-            Submit
-          </button>
-
-          {confirmation && (
-            <p className="text-green-600 font-medium mt-4 text-center">
-              {confirmation} <br />Redirecting to About page...
-            </p>
-          )}
-        </form>
 
       </section>
 
