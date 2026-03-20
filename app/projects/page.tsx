@@ -1,11 +1,5 @@
 import Image from 'next/image'
 
-const projects = [
-    { title: 'Logo Design', desc: 'I created a logo for a website using Illustrator in my first semester.', img: '/projectimg/Project-1.png'},
-    { title: 'Song Lyrics', desc: 'A webpage where I added song lyrics in HTML and styled it with CSS. Added background image and a footer link to the original lyrics site.', img: '/projectimg/Project-2.png' },
-    { title: 'Book Search', desc: 'Built a website for searching books by author using API in JavaScript.', img: '/projectimg/Project-3.png' }
-]
-
 export default function Projects() {
   return (
     <main className="min-h-screen relative flex flex-col items-center justify-start pt-28 pb-24 px-6 bg-gray-50 text-gray-900 overflow-hidden">
@@ -14,28 +8,37 @@ export default function Projects() {
       <div className="absolute w-[600px] h-[600px] bg-blue-600 opacity-20 blur-[200px] rounded-full -top-32 left-10 animate-pulse"></div>
       <div className="absolute w-[400px] h-[400px] bg-purple-600 opacity-20 blur-[200px] rounded-full bottom-0 right-0 animate-pulse"></div>
 
-      {/* Overlay for readability */}
+      {/* Overlay */}
       <div className="absolute inset-0 bg-white/20 backdrop-blur-sm pointer-events-none"></div>
 
-      {/* Projects Content */}
-      <section className="relative z-10 max-w-5xl w-full text-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-2xl text-gray-900">
+      {/* Content */}
+      <section className="relative z-10 max-w-3xl w-full text-center">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-2xl">
           My Projects
         </h1>
-        <p className="text-lg md:text-xl text-gray-700 mb-12 drop-shadow-sm">
-          Here are some projects which showcase my skills in developing and designing.
+
+        <p className="text-lg md:text-xl text-gray-700 mb-10">
+          I am currently working on building real-world projects to showcase my skills.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {projects.map((p) => (
-            <article key={p.title} className="bg-white/70 backdrop-blur-md rounded-2xl p-5 shadow-lg hover:scale-105 transition-transform">
-              <div className="h-36 w-full relative mb-3 rounded-lg overflow-hidden">
-                <Image src={p.img} alt={p.title} fill style={{ objectFit:'cover' }} />
-              </div>
-              <h3 className="font-semibold text-gray-900 text-lg">{p.title}</h3>
-              <p className="text-gray-700 text-sm mt-2">{p.desc}</p>
-            </article>
-          ))}
+        {/* Coming Soon Box */}
+        <div className="bg-white/70 backdrop-blur-md rounded-2xl p-8 shadow-lg">
+          <h2 className="text-2xl font-semibold mb-4">✨Coming Soon</h2>
+
+          <p className="text-gray-700 mb-4">
+            New projects are in progress and will be added here soon. Stay tuned!
+          </p>
+
+          <div className="mt-6 text-left">
+            <h3 className="font-semibold text-gray-900 mb-2">💡 What I’m Working On</h3>
+
+            <ul className="text-gray-700 text-sm space-y-1">
+              <li>• Building responsive websites</li>
+              <li>• Creating websites using WordPress</li>
+              <li>• Learning React and modern tools</li>
+              <li>• Designing clean and simple UI</li>
+            </ul>
+          </div>
         </div>
       </section>
 
