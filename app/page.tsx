@@ -52,7 +52,7 @@ export default function Home() {
           >
             About Me
           </Link>
-          {/* <Link
+          <Link
             href="/projects"
             className="px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-700 transition shadow-lg text-white"
           >
@@ -63,7 +63,7 @@ export default function Home() {
             className="px-6 py-3 rounded-xl bg-gray-700 hover:bg-gray-600 transition shadow-lg text-white"
           >
             Contact
-          </Link> */}
+          </Link>
         </div>
       </section>
 
