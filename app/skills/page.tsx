@@ -58,7 +58,7 @@ export default function Skills() {
 
       {/* Footer */}
       <footer className="w-full text-center text-gray-700 text-sm mt-12">
-        © 2025 Nishi • Portfolio
+        © 2026 Nishi • Portfolio
       </footer>
     </main>
   );

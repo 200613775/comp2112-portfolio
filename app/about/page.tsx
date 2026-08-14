@@ -54,7 +54,7 @@ export default function About() {
 
       {/* Footer */}
       <footer className="w-full text-center text-gray-700 text-sm mt-12 relative z-10">
-        © 2025 Nishi • Portfolio
+        © 2026 Nishi • Portfolio
       </footer>
     </main>
   );

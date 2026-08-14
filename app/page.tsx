@@ -69,7 +69,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="absolute bottom-6 w-full text-center text-gray-700 text-sm">
-        © 2025 Nishi • Portfolio
+        © 2026 Nishi • Portfolio
       </footer>
     </main>
   );
