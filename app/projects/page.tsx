@@ -90,7 +90,9 @@ export default function Projects() {
 
         {/* More coming */}
         <div className="mt-10 bg-white/50 backdrop-blur-md rounded-2xl p-6 shadow-md text-left">
-          <h3 className="font-semibold text-gray-900 mb-2">💡 What I'm Working On Next</h3>
+         <h3 className="font-semibold text-gray-900 mb-2">
+  💡 What I&apos;m Working On Next
+</h3>
           <ul className="text-gray-700 text-sm space-y-1">
             <li>• Learning Webflow for visual site building</li>
             <li>• Expanding into React-based project work</li>
