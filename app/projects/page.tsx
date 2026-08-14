@@ -21,7 +21,6 @@ export default function Projects() {
       accent: "from-blue-500/20 to-purple-600/10",
     },
   ]
-
   return (
     <main className="min-h-screen relative flex flex-col items-center justify-start pt-28 pb-24 px-6 bg-gray-50 text-gray-900 overflow-hidden">
 
